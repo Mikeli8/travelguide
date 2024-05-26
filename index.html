@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Moscow</title>
+	<link rel="stylesheet" href="Style.css">
+	<meta name="viewport" content="width=device-width">
+	
+</head>
+<body>
+	<h1>Путеводитель по городу Москва</h1>
+	<p>Уважаемый турист! Этот сайт - ваш карманный путеводитель по столице.</p>
+	<p>Что он умеет:
+
+        <p>Определит ваше местоположение и покажет его на карте.
+            <p>Найдёт ближайшие достопримечательности, рестораны, магазиныи другие интересные места.
+                <p>Проложит маршрут между выбранными точками с указанием ориентиров.
+                    <p>Расскажет о достопримечательностях: вы найдете описания, фотографии, отзывы и оценки других пользователей.
+                        <p>Включит аудиогид, когда вы окажетесь рядом с интересным объектом.
+                            <p>Сообщит о предстоящих событияхи поможет составить расписание. 
+
+                                <p>Начните знакомство с Москвой прямо сейчас!
+		
+	<p>
+		
+		<a href="map.html">Найти достопримечательность и интересное место</a>
+	  </p>
+
+	  <p>
+		
+		<a href="marshrut.html">Построить маршрут</a>
+	  </p>
+     
+<p>
+        Поддержка геолокации браузером: 
+        <span class="output"></span>
+    </p>
+ 
+     
+    <button onclick="checkGeolocation()">
+        Проверить поддержку геолокации
+    </button>
+     
+    <script type="text/javascript">
+         
+        function checkGeolocation() {
+            if (navigator.geolocation)
+                isSupported = "есть";
+            else
+                isSupported = "нет";
+ 
+            document.querySelector('.output').textContent
+                    = isSupported;
+        }
+    </script>
+	
+	
+</body>
+</html>
